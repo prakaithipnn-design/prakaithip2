@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resume - ประกายทิพย์ น้อยสิงห์</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+    --pastel-blue:#e1f5fe;
+    --pastel-green:#e8f5e9;
+    --deep-blue:#0277bd;
+    --deep-green:#2e7d32;
+    --text-dark:#37474f;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Sarabun',sans-serif;
+    background:linear-gradient(135deg,#f5f9ff,#eefcf3);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:30px;
+}
+
+.resume-card{
+    width:100%;
+    max-width:1000px;
+    display:flex;
+    flex-wrap:wrap;
+    background:rgba(255,255,255,0.95);
+    border-radius:24px;
+    overflow:hidden;
+    box-shadow:0 15px 40px rgba(0,0,0,.12);
+    animation:fadeIn 1s ease;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.sidebar{
+    flex:1;
+    min-width:300px;
+    background:linear-gradient(180deg,var(--pastel-blue),var(--pastel-green));
+    padding:40px 30px;
+    text-align:center;
+}
+
+.profile-img{
+    width:200px;
+    height:200px;
+    border-radius:50%;
+    object-fit:cover;
+    border:6px solid #fff;
+    box-shadow:0 8px 20px rgba(0,0,0,.12);
+}
+
+.side-section{
+    margin-top:30px;
+    text-align:left;
+}
+
+.side-title{
+    font-size:1.1rem;
+    font-weight:700;
+    color:var(--deep-green);
+    border-bottom:2px solid rgba(255,255,255,.8);
+    padding-bottom:8px;
+    margin-bottom:12px;
+}
+
+.info-text{
+    margin-bottom:8px;
+    font-size:.95rem;
+    line-height:1.6;
+}
+
+.skill-badge{
+    display:inline-block;
+    padding:7px 14px;
+    margin:4px;
+    border-radius:20px;
+    background:#fff;
+    border:1px solid #ddd;
+    font-size:.85rem;
+    transition:.3s;
+}
+
+.skill-badge:hover{
+    transform:translateY(-3px);
+    background:var(--deep-blue);
+    color:white;
+}
+
+.main-content{
+    flex:2;
+    min-width:400px;
+    padding:50px 40px;
+    position:relative;
+}
+
+.main-content::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background-image:url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=1200');
+    background-size:cover;
+    background-position:center;
+    opacity:.04;
+    pointer-events:none;
+}
+
+.main-content>*{
+    position:relative;
+    z-index:2;
+}
+
+h1{
+    color:var(--deep-blue);
+    font-size:2.2rem;
+}
+
+.eng-name{
+    color:var(--deep-green);
+    margin-top:5px;
+    margin-bottom:20px;
+    font-weight:600;
+}
+
+.intro-box{
+    line-height:1.8;
+    margin-bottom:25px;
+}
+
+.content-header{
+    background:var(--pastel-green);
+    padding:10px 15px;
+    border-left:5px solid var(--deep-green);
+    font-weight:700;
+    margin:25px 0 15px;
+    border-radius:8px;
+}
+
+.exp-box{
+    padding-left:15px;
+    border-left:2px solid #ddd;
+    margin-bottom:18px;
+}
+
+.exp-year{
+    color:var(--deep-blue);
+    font-weight:700;
+    font-size:.9rem;
+}
+
+.exp-title{
+    display:block;
+    margin:5px 0;
+    font-weight:600;
+}
+
+.list-details{
+    padding-left:20px;
+    line-height:1.8;
+}
+
+@media(max-width:768px){
+
+    .resume-card{
+        flex-direction:column;
+    }
+
+    .sidebar,
+    .main-content{
+        min-width:100%;
+    }
+
+    .profile-img{
+        width:160px;
+        height:160px;
+    }
+
+    h1{
+        font-size:1.8rem;
+    }
+
+    .main-content{
+        padding:30px 25px;
+    }
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="resume-card">
+
+```
+<div class="sidebar">
+
+    <!-- เปลี่ยนชื่อไฟล์รูปเป็น ประกาย.jpg -->
+    <img src="ประกาย.jpg" alt="ประกายทิพย์ น้อยสิงห์" class="profile-img">
+
+    <div class="side-section">
+        <div class="side-title">ข้อมูลติดต่อ</div>
+        <div class="info-text">📞 093-228-4037</div>
+        <div class="info-text">📧 prakaithipnn@gmail.com</div>
+        <div class="info-text">📍 แจ้งวัฒนะ ปากเกร็ด นนทบุรี</div>
+    </div>
+
+    <div class="side-section">
+        <div class="side-title">ทักษะ</div>
+
+        <div class="skill-badge">Logistics</div>
+        <div class="skill-badge">Warehouse Management</div>
+        <div class="skill-badge">Transportation</div>
+        <div class="skill-badge">MS Office</div>
+        <div class="skill-badge">Microsoft Excel</div>
+        <div class="skill-badge">Canva</div>
+        <div class="skill-badge">AI Tools</div>
+        <div class="skill-badge">Teamwork</div>
+    </div>
+
+    <div class="side-section">
+        <div class="side-title">ภาษา</div>
+        <div class="info-text">🇹🇭 ไทย</div>
+        <div class="info-text">🇬🇧 อังกฤษ (พื้นฐาน)</div>
+        <div class="info-text">🇨🇳 จีน (พื้นฐาน)</div>
+    </div>
+
+</div>
+
+<div class="main-content">
+
+    <h1>ประกายทิพย์ น้อยสิงห์</h1>
+    <div class="eng-name">Prakaithip Noising</div>
+
+    <div class="intro-box">
+        นักศึกษาที่มีความสนใจด้านโลจิสติกส์ การบริหารจัดการคลังสินค้า
+        และการประยุกต์ใช้เทคโนโลยี AI ในการทำงาน
+        มีความรับผิดชอบ สามารถเรียนรู้สิ่งใหม่ได้รวดเร็ว
+        พร้อมพัฒนาทักษะและประสบการณ์เพื่อเติบโตในสายอาชีพอย่างมืออาชีพ
+    </div>
+
+    <div class="content-header">
+        ประวัติการศึกษา
+    </div>
+
+    <div class="exp-box">
+        <span class="exp-year">ปัจจุบัน</span>
+        <span class="exp-title">ระดับปริญญาตรี</span>
+
+        <ul class="list-details">
+            <li>กรอกชื่อมหาวิทยาลัย</li>
+            <li>กรอกคณะ / สาขาวิชา</li>
+            <li>ชั้นปีที่กำลังศึกษา</li>
+        </ul>
+    </div>
+
+    <div class="content-header">
+        ประสบการณ์
+    </div>
+
+    <div class="exp-box">
+        <span class="exp-year">ประสบการณ์ฝึกงาน / ทำงาน</span>
+        <span class="exp-title">ด้านโลจิสติกส์และคลังสินค้า</span>
+
+        <ul class="list-details">
+            <li>จัดการและตรวจสอบข้อมูลสินค้า</li>
+            <li>ประสานงานด้านการขนส่ง</li>
+            <li>จัดทำเอกสารและรายงาน</li>
+            <li>สนับสนุนการดำเนินงานภายในองค์กร</li>
+        </ul>
+    </div>
+
+    <div class="content-header">
+        ผลงานเด่น
+    </div>
+
+    <ul class="list-details">
+        <li>เว็บไซต์ Portfolio ส่วนตัว</li>
+        <li>โครงงานด้าน AI และเทคโนโลยีดิจิทัล</li>
+        <li>ออกแบบสื่อประชาสัมพันธ์ด้วย Canva</li>
+    </ul>
+
+    <div class="content-header">
+        ความสามารถเพิ่มเติม
+    </div>
+
+    <ul class="list-details">
+        <li>ใช้ Microsoft Word, Excel และ PowerPoint ได้ดี</li>
+        <li>ใช้ AI เพื่อวิเคราะห์ข้อมูลและสร้างเนื้อหา</li>
+        <li>มีทักษะการสื่อสารและการทำงานเป็นทีม</li>
+        <li>พร้อมเรียนรู้และพัฒนาตนเองอยู่เสมอ</li>
+    </ul>
+
+</div>
+```
+
+</div>
+
+</body>
+</html>
